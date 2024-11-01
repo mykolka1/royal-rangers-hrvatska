@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Royal Rangers Hrvatska</title>
+    <link rel="icon" href="img/logo/rr_hr.png">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header" id="header">
             <div class="header__container">
-                <a href="index.html" class="logo__link">
-                    <img src="img/logo/rr_logo.png" alt="royal rangers logo" class="header__logo">
+                <a href="index.html" class="header__logo logo">
+                    <img src="img/logo/rr_logo.png" alt="royal rangers logo" class="logo__link">
                 </a>
-                <nav class="header__menu">
+                <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a href="#intro" class="menu__link">Tko smo</a>
@@ -31,32 +32,34 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="index.html" class="logo__link">
-                    <img src="img/logo/rr_hr.png" alt="royal rangers croatia logo" class="header__logo">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <a href="index.html" class="header__logo logo">
+                    <img src="img/logo/rr_hr.png" alt="royal rangers logo" class="logo__link">
                 </a>
             </div>
         </header>
         <main class="page">
-            <section class="page__main">
+            <section class="page__main main">
                 <div class="main__container">
-                    <div class="main__body">
-                        <div class="main__title">
-                            <h1 class="title">Royal Rangers Hrvatska</h1>
-                        </div>
-                        <div class="main__label">
-                            <p>"čini drugima ono što želiš da drugi čine tebi."</p>
-                        </div>
-                        <div class="main__button">
-                            <button class="button__button">Button</button>
-                        </div>
+                    <div class="main__title">
+                        <h1 class="title">Royal Rangers Hrvatska</h1>
+                    </div>
+                    <div class="main__label">
+                        <p>"čini drugima ono što želiš da drugi čine tebi."</p>
+                    </div>
+                    <div class="main__button">
+                        <button>Button</button>
                     </div>
                 </div>
             </section>
-            <section class="page__intro" id="intro">
+
+            <section class="page__intro intro" id="intro">
                 <div class="intro__container">
                     <h2 class="intro__title">Tko smo</h2>
                     <div class="intro__body">
-                        <div class="intro__info">
+                        <div class="intro__info info">
                             <h3 class="info__title">Tko su Royal Rangersi</h3>
                             <p class="info__text">
                                 Royal Rangers je kršćanski program koji je osnovan 1962. godine u
@@ -74,54 +77,43 @@
                     </div>
                 </div>
             </section>
-            <sectoin class="page__about" id="about">
+
+            <sectoin class="page__about about" id="about">
                 <div class="about__container">
                     <h2 class="about__title">O nama</h2>
-                    <div class="about__body">
-                        <div class="body__list">
-                            <img src="img/icons/camping.svg" alt="tent" class="list__icon">
-                            <h3 class="list__title">Povijest</h3>
-                            <p class="list__text">
+                    <div class="about__cards cards">
+                        <div class="card">
+                            <img src="img/icons/camping.svg" alt="tent" class="card__icon">
+                            <h3 class="card__title">Povijest</h3>
+                            <p class="card__text">
                                 Royal Rangers je osnovao Johnnie Barnes 1962. godine u SAD.
                             </p>
+                            <button class="card__more" id="#">read more</button>
                         </div>
-                        <div class="body__list">
-                            <img src="img/icons/compass.svg" alt="compas" class="list__icon">
-                            <h3 class="list__title">Rangersi u Hrvatskoj</h3>
-                            <p class="list__text">
+                        <div class="card">
+                            <img src="img/icons/compass.svg" alt="compas" class="card__icon">
+                            <h3 class="card__title">Rangersi u Hrvatskoj</h3>
+                            <p class="card__text">
                                 Lorem ipsum dolor sit amet consectetur,
                                 adipisicing elit. Similique,
                                 officiis?
                             </p>
+                            <button class="card__more" id="#">read more</button>
                         </div>
-                        <div class="body__list">
-                            <img src="img/icons/campfire.svg" alt="fire" class="list__icon">
-                            <h3 class="list__title">Title</h3>
-                            <p class="list__text">
+                        <div class="card">
+                            <img src="img/icons/campfire.svg" alt="fire" class="card__icon">
+                            <h3 class="card__title">Title</h3>
+                            <p class="card__text">
                                 Lorem ipsum dolor sit amet consectetur,
                                 adipisicing elit. Similique,
                                 officiis?
                             </p>
+                            <button class="card__more" id="#">read more</button>
                         </div>
                     </div>
                 </div>
             </sectoin>
-            <section class="page__event" id="events">
-                <div class="event__cotainer">
-                    <div class="event__title">
-                        <h2>Euro Camp 2024</h2>
-                    </div>
-                    <div class="event__date">
-                        <p>28.7. - 3.8.2024. Hungary</p>
-                    </div>
-                    <div class="event__link">
-                        <a href="https://royalrangerseurocamp.net/">posjetite stranicu</a>
-                    </div>
-                    <div class="event__img">
-                        <img src="img/logo/euro_camp__logo.png" alt="logo">
-                    </div>
-                </div>
-            </section>
+
         </main>
         <footer class="footer" id="footer">
             <div class="footer__container">
@@ -150,6 +142,7 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
