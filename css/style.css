@@ -401,6 +401,7 @@ body {
     font-weight: 500;
     line-height: 28px;
     margin-bottom: 14px;
+    text-wrap: nowrap;
 }
 .card__text {
     color: #302e2e;
@@ -418,30 +419,32 @@ body {
 }
 
 @media (max-width:767px) {
-    .about__body {
+    .about__cards {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
     }
-    .about__body {
+    .card {
         width: 80%;
     }
-    .list__text {
-        width: 60%;
+    .card__text {
+        width: 80%;
     }
 }
 
 /* footer */
 
 .footer {
-    background-color: #416836;
+    background-color: #64a352;
 }
 .footer__container {
     display: flex;
     flex-direction: column;
-    height: 200px;
     align-items: center;
     text-align: center;
-    gap: 40px;
+    gap: 20px;
+    padding: 20px 15px;
 }
 .footer__top {
     display: flex;
@@ -449,7 +452,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: 20px;
 }
 .footer__text {
 }
